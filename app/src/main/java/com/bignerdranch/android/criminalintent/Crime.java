@@ -15,8 +15,11 @@ public class Crime {
     private boolean mSolved;
 
     public Crime() {
-        // 고유한 실별자를 생성한다
-        this.mId = UUID.randomUUID();
+        this(UUID.randomUUID());
+    }
+
+    public Crime(UUID id) {
+        mId = id;
         mDate = new Date();
     }
 
