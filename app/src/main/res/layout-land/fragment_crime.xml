@@ -37,6 +37,12 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"/>
 
+        <Button
+            android:id="@+id/crime_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
         <CheckBox
             android:id="@+id/crime_solved"
             android:layout_width="wrap_content"
@@ -46,10 +52,35 @@
 
     </LinearLayout>
 
-    <Button
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/crime_suspect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/crime_suspect_text"/>
+
+        <Button
+            android:id="@+id/crime_report"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/crime_report_text"/>
+
+    </LinearLayout>
+
+    <Button
         android:id="@+id/landscape_only_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
         android:text="landscape_only_button"/>
 
 
